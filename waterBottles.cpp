@@ -8,8 +8,6 @@ public:
             numBottles-=numExchange;
             numBottles++;
         }
-
-        
         return consumedBottles+numBottles;
     }
 };
