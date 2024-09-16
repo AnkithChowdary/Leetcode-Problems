@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Book1",
+    "Price": 100,
+    "AuthorName": "Author1"
+  },
+  {
+    "Name": "Book2",
+    "Price": 200,
+    "AuthorName": "Author2"
+  },
+  {
+    "Name": "Book3",
+    "Price": 300,
+    "AuthorName": "Author3"
+  },
+  {
+    "Name": "Book4",
+    "Price": 400,
+    "AuthorName": "Author4"
+  }
+]
