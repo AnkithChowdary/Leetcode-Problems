@@ -1,5 +1,29 @@
 class Solution {
 public:
+// Without dp
+    bool solve(string s,string p){
+        if(p.length()==0)
+        return s.length()==0;
+
+        bool first=false;
+
+        if(s.length()>0&&(p[0]==s[0]||p[0]=='.'))
+        first=true;
+
+        if(p.length()>=2&&p[1]=='*')
+        return (solve(s,p.substr(2)))||(first&&solve(s.substr(1),p));
+        else
+        return first&&solve(s.substr(1),p.substr(1));
+
+    }
+    bool isMatch(string s, string p) {
+        return solve(s,p);
+    }
+};
+
+
+class Solution {
+public:
      int dp[21][21];
     bool solve(string s,string p,int i,int j){
         if(j==p.length())
